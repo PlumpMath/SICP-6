@@ -22,4 +22,4 @@ prime_sum_pairs :: Int -> [((Int, Int), Int)]
 prime_sum_pairs n = map make_pair_sum $ filter prime_sum $ flat_map (\i -> map (\j -> [i, j]) [1..(i-1)]) [1..n]
 
 main = do
-    print $ prime_sum_pairs (5::Int)
+    print $ prime_sum_pairs 10
